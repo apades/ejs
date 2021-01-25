@@ -1,0 +1,15 @@
+<% let lang = require(`./i18n/${process.env.build_lang}.js`) %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= lang.title %></title>
+</head>
+<body>
+    <img src="/assets/猫猫头.jpg" style="width: 100px;" alt="">
+    <div class="layout-container <%= process.env.build_lang %>">
+        <%= require('./m1.ejs')({lang:lang.m1}) %>
+    </div>
+</body>
+</html>

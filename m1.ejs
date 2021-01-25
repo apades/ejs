@@ -1,0 +1,9 @@
+<% let l = data.lang %>
+<div class="m1">
+    <p>a:<%= l.a %></p>
+    <ul>
+        <% l.b.forEach(d=>{ %>
+            <li>n:<%= d %></li>
+        <% }) %>
+    </ul>
+</div>
